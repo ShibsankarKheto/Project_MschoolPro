@@ -22,9 +22,15 @@ namespace MschoolProWeb
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 
+          
+            bundles.Add(new ScriptBundle("~/admin-lte/js").Include(
+                       "~/admin-lte/js/adminlte.js"));
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/font-awesome.css",
+                      "~/admin-lte/css/AdminLTE.css",
+                      "~/admin-lte/css/skins/_all-skins.css"));
         }
     }
 }
